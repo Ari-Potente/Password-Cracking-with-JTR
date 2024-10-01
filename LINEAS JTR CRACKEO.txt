@@ -1,0 +1,186 @@
+LINEAS DE CREACION DE DATASETS 
+
+PARTE 1 (MINUSCULAS)
+
+- Dataset 1
+   - johnn --fomat=md5crypt --max-length=3 --min-length=3 -mask='?l?l?l' hash1.txt
+   - johnn --rules=single --fomat=md5crypt --max-length=3 --min-length=3 -wordlist=dataset1.txt hash1_2.txt
+   - johnn --fomat=md5crypt --max-length=3 --min-length=3 -mask='?l?l?l' --fork=4 hash1_threads.txt
+   - johnn --rules=single --fomat=md5crypt --max-length=3 --min-length=3 -wordlist=dataset1.txt --fork=4 hash1_threads_w.txt
+   - johnn --incremental --fomat=md5crypt --max-length=3 --min-length=3 hash1_incremental.txt
+   
+- Dataset 2
+   - johnn --fomat=md5crypt --max-length=4 --min-length=4 -mask='?l?l?l?l' hash2_2.txt
+   - johnn --rules=single --fomat=md5crypt --max-length=4 --min-length=4 -wordlist=dataset2.txt hash2.txt
+   - johnn --fomat=md5crypt --max-length=4 --min-length=4 -mask='?l?l?l?l' --fork=4 hash2_threads.txt
+   - johnn --rules=single --fomat=md5crypt --max-length=4 --min-length=4 -wordlist=dataset2.txt --fork=4 hash2_threads_w.txt
+   - johnn --incremental --fomat=md5crypt --max-length=4 --min-length=4 hash2_incremental.txt
+
+- Dataset 3
+
+   - johnn --fomat=md5crypt --max-length=5 --min-length=5 -mask='?l?l?l?l?l' hash3.txt
+   - johnn --rules=single --fomat=md5crypt --max-length=5 --min-length=5 -wordlist=dataset3.txt hash3.txt
+   
+- Dataset 4
+
+   - johnn --fomat=md5crypt --max-length=6 --min-length=6 -mask='?l?luc?l?l' hash4.txt
+   - johnn --rules=single --fomat=md5crypt --max-length=6 --min-length=6 -wordlist=dataset4.txt hash4.txt
+   - johnn --fomat=md5crypt --max-length=6 --min-length=6 -mask='?l?luc?l?l' --fork=4 hash4_threads.txt
+   - johnn --rules=single --fomat=md5crypt --max-length=6 --min-length=6 -wordlist=dataset4.txt --fork=4 hash4_threads_w.txt
+   
+- Dataset 5
+   - johnn --fomat=md5crypt --max-length=7 --min-length=7 -mask='?l?lucm?l?l' hash5.txt
+   - johnn --rules=single --fomat=md5crypt --max-length=7 --min-length=7 -wordlist=dataset5.txt hash5_3.txt
+   - johnn --fomat=md5crypt --max-length=7 --min-length=7 -mask='?l?lucm?l?l' --fork=4 hash5_threads.txt
+   - johnn --rules=single --fomat=md5crypt --max-length=7 --min-length=7 -wordlist=dataset5.txt --fork=4 hash5_threads_w.txt
+
+
+PARTE 2 (MAYUSCULAS)
+
+
+- Dataset 1
+
+   - johnn --fomat=md5crypt --max-length=3 --min-length=3 -mask='?u?u?u' hash6.txt
+   - johnn --rules=single --fomat=md5crypt --max-length=3 --min-length=3 -wordlist=dataset6.txt hash6.txt
+   - johnn --fomat=md5crypt --max-length=3 --min-length=3 -mask='?u?u?u' --fork=4 hash6.txt
+   - johnn --rules=single --fomat=md5crypt --max-length=3 --min-length=3 -wordlist=dataset6.txt --fork=4 hash6.txt
+   - johnn --incremental:upper --fomat=md5crypt --max-length=3 --min-length=3 hash6.txt
+   
+- Dataset 2
+
+   - johnn --fomat=md5crypt --max-length=4 --min-length=4 -mask='?u?u?u?u' hash7.txt
+   - johnn --rules=single --fomat=md5crypt --max-length=4 --min-length=4 -wordlist=dataset7.txt hash7.txt
+   - johnn --fomat=md5crypt --max-length=4 --min-length=4 -mask='?u?u?u?u' --fork=4 hash7.txt
+   - johnn --rules=single --fomat=md5crypt --max-length=4 --min-length=4 -wordlist=dataset7.txt --fork=4 hash7.txt
+   - johnn --incremental:upper --fomat=md5crypt --max-length=4 --min-length=4 hash7.txt
+
+- Dataset 3
+
+   - johnn --fomat=md5crypt --max-length=5 --min-length=5 -mask='?u?u?u?u?u' hash8.txt
+   - johnn --rules=single --fomat=md5crypt --max-length=5 --min-length=5 -wordlist=dataset8.txt hash8.txt
+
+- Dataset 4
+
+   - johnn --fomat=md5crypt --max-length=6 --min-length=6 -mask='?uZ?uA?u?u?u' hash4.txt
+   - johnn --rules=single --fomat=md5crypt --max-length=6 --min-length=6 -wordlist=dataset4.txt hash4_2.txt
+
+
+
+- Dataset 5
+
+   - johnn --fomat=md5crypt --max-length=7 --min-length=7 -mask='?uT?uG?uS?u' hash10.txt
+   - johnn --rules=single --fomat=md5crypt --max-length=7 --min-length=7 -wordlist=dataset5.txt hash10_2.txt
+   - johnn --rules=single --fomat=md5crypt --max-length=7 --min-length=7 -wordlist=dataset5.txt --fork=4 hash10_3.txt
+   - johnn --fomat=md5crypt --max-length=7 --min-length=7 -mask='?uT?uG?uS?u' --fork=4 hash10_4threads.txt
+
+PARTE 3 (NÚMEROS)
+
+
+- Dataset 1
+
+   - johnn --fomat=md5crypt --max-length=3 --min-length=3 -mask='?d?d?d' hash11.txt
+   - johnn --rules=single --fomat=md5crypt --max-length=3 --min-length=3 -wordlist=dataset11.txt hash11.txt
+   - johnn --fomat=md5crypt --max-length=3 --min-length=3 -mask='?d?d?d' --fork=4 hash11.txt
+   - johnn --rules=single --fomat=md5crypt --max-length=3 --min-length=3 -wordlist=dataset11.txt --fork=4 hash11.txt
+   - johnn --incremental:Digits --fomat=md5crypt --max-length=3 --min-length=3 hash11.txt
+   - johnn --incremental:Digits --fomat=md5crypt --max-length=3 --min-length=3 --fork=4 hash11.txt
+
+
+- Dataset 2
+
+   - johnn --fomat=md5crypt --max-length=4 --min-length=4 -mask='?d?d?d?d' hash12.txt
+   - johnn --rules=single --fomat=md5crypt --max-length=4 --min-length=4 -wordlist=dataset12.txt hash12.txt
+   - johnn --fomat=md5crypt --max-length=4 --min-length=4 -mask='?d?d?d?d' --fork=4 hash12.txt
+   - johnn --rules=single --fomat=md5crypt --max-length=4 --min-length=4 -wordlist=dataset12.txt --fork=4 hash12.txt
+   - johnn --incremental:Digits --fomat=md5crypt --max-length=4 --min-length=4 hash12.txt
+   - johnn --incremental:Digits --fomat=md5crypt --max-length=4 --min-length=4 --fork=4 hash12.txt
+
+- Dataset 3
+
+   - johnn --fomat=md5crypt --max-length=5 --min-length=5 -mask='?d?d?d?d?d' hash13.txt
+   - johnn --rules=single --fomat=md5crypt --max-length=5 --min-length=5 -wordlist=dataset13.txt hash13.txt
+   - johnn --fomat=md5crypt --max-length=5 --min-length=5 -mask='?d?d?d?d?d' --fork=4 hash13.txt
+   - johnn --rules=single --fomat=md5crypt --max-length=5 --min-length=5 -wordlist=dataset13.txt --fork=4 hash13.txt
+   - johnn --incremental:Digits --fomat=md5crypt --max-length=5 --min-length=5 hash13.txt
+   - johnn --incremental:Digits --fomat=md5crypt --max-length=5 --min-length=5 --fork=4 hash13.txt
+
+
+- Dataset 4
+
+   - johnn --fomat=md5crypt --max-length=6 --min-length=6 -mask='?d?d?d?d?d?d' hash14.txt
+   - johnn --rules=single --fomat=md5crypt --max-length=6 --min-length=6 -wordlist=dataset14.txt hash14.txt
+   - johnn --fomat=md5crypt --max-length=6 --min-length=6 -mask='?d?d?d?d?d?d' hash14_ord.txt
+   - johnn --rules=single --fomat=md5crypt --max-length=6 --min-length=6 -wordlist=dataset14.txt hash14_ord.txt
+
+
+- Dataset 5
+
+   - johnn --fomat=md5crypt --max-length=7 --min-length=7 -mask='?d?d?d?d?d?d?d' hash15.txt
+   - johnn --rules=single --fomat=md5crypt --max-length=7 --min-length=7 -wordlist=dataset15.txt hash15.txt
+   - johnn --fomat=md5crypt --max-length=7 --min-length=7 -mask='?d?d?d?d?d?d?d' hash15_ord.txt
+   - johnn --rules=single --fomat=md5crypt --max-length=7 --min-length=7 -wordlist=dataset15.txt hash15_ord_w3.txt
+
+
+PARTE 4 (ALFANÚMERICOS)
+
+
+- Dataset 1
+
+   - johnn --fomat=md5crypt --max-length=3 --min-length=3 -mask='?a?a?a?a' hash16.txt
+   - johnn --rules=single --fomat=md5crypt --max-length=5 --min-length=5 -wordlist=dataset16.txt hash16.txt
+   - johnn --incremental:ASCII --fomat=md5crypt --max-length=3 --min-length=3 hash16.txt
+   - johnn --incremental:ASCII --fomat=md5crypt --max-length=3 --min-length=3 --fork=4 hash16.txt
+
+
+- Dataset 2
+
+   - johnn --fomat=md5crypt --max-length=4 --min-length=4 -mask='?a?a?a?a' hash17.txt
+   - johnn --rules=single --fomat=md5crypt --max-length=4 --min-length=4 -wordlist=dataset17.txt hash17.txt
+
+- Dataset 3
+
+   - johnn --fomat=md5crypt --max-length=5 --min-length=5 -mask='?a?a?a?a?a' hash18.txt
+   - johnn --rules=single --fomat=md5crypt --max-length=5 --min-length=5 -wordlist=dataset18.txt hash18.txt
+
+- Dataset 4
+
+   - johnn --fomat=md5crypt --max-length=6 --min-length=6 -mask='?a?a?a?a?a?a' hash19.txt
+   - johnn --rules=single --fomat=md5crypt --max-length=6 --min-length=6 -wordlist=dataset19.txt hash19.txt
+
+
+- Dataset 5
+
+   - johnn --fomat=md5crypt --max-length=7 --min-length=7 -mask='?a?a?a?a?a?a?a' hash20.txt
+   - johnn --rules=single --fomat=md5crypt --max-length=7 --min-length=7 -wordlist=dataset20.txt hash20.txt
+
+PARTE 5 (DICCIONARIO)
+
+
+- Dataset 1
+
+   - johnn --rules=Capitaliza --fomat=md5crypt --max-length=10 --min-length=3 -wordlist=top_family_names_usa.txt hash21.txt
+   - johnn --rules=single --fomat=md5crypt --max-length=10 --min-length=3 -wordlist=top_family_names_usa.txt hash21.txt
+
+- Dataset 2
+
+   - johnn --rules=Capitaliza --fomat=md5crypt --max-length=11 --min-length=3 -wordlist=top_family_names_usa.txt hash22.txt
+   - johnn --rules=single --fomat=md5crypt --max-length=11 --min-length=3 -wordlist=top_family_names_usa.txt hash22.txt
+
+- Dataset 3
+
+   - johnn --rules=Capitaliza --fomat=md5crypt --max-length=11 --min-length=3 -wordlist=top_family_names_usa.txt hash23.txt
+   - johnn --rules=single --fomat=md5crypt --max-length=11 --min-length=3 -wordlist=top_family_names_usa.txt hash23.txt
+
+
+- Dataset 4
+
+   - johnn --rules=Capitaliza --fomat=md5crypt --max-length=9 --min-length=3 -wordlist=top_family_names_usa.txt hash24.txt
+   - johnn --rules=single --fomat=md5crypt --max-length=9 --min-length=3 -wordlist=top_family_names_usa.txt hash24.txt
+
+
+- Dataset 5
+
+   - johnn --rules=Capitaliza --fomat=md5crypt --max-length=10 --min-length=3 -wordlist=top_family_names_usa.txt hash25.txt
+   - johnn --rules=single --fomat=md5crypt --max-length=10 --min-length=3 -wordlist=top_family_names_usa.txt hash25.txt
+
+

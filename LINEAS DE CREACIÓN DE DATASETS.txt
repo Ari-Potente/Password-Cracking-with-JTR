@@ -1,0 +1,43 @@
+LINEAS DE CREACIÓN DE DATASETS
+
+PARTE 1 (MINÚSCULAS)
+- crunch 3 3 -f /usr/share/crunch/charset.lst lalpha -o dataset1.txt
+- crunch 4 4 -f /usr/share/crunch/charset.lst lalpha -o dataset2.txt
+- crunch 5 5 -f /usr/share/crunch/charset.lst lalpha -o dataset3.txt
+- crunch 6 6 -f /usr/share/crunch/charset.lst lalpha -t @@uc@@ -o dataset4.txt
+- crunch 7 7 -f /usr/share/crunch/charset.lst lalpha -t @@ucm@@ -o dataset5.txt
+
+
+PARTE 2 (MAYÚSCULAS)
+- crunch 3 3 -f /usr/share/crunch/charset.lst ualpha -o dataset6.txt
+- crunch 4 4 -f /usr/share/crunch/charset.lst ualpha -o dataset7.txt
+- crunch 5 5 -f /usr/share/crunch/charset.lst ualpha -o dataset8.txt
+- crunch 6 6 -f /usr/share/crunch/charset.lst ualpha -t ,Z,A,, -o dataset9.txt
+- crunch 7 7 -f /usr/share/crunch/charset.lst ualpha -t ,T,G,S, -o dataset10.txt
+
+PARTE 3 (NÚMEROS)
+- crunch 3 3 -f /usr/share/crunch/charset.lst numeric -o dataset11.txt
+- crunch 4 4 -f /usr/share/crunch/charset.lst numeric -o dataset12.txt
+- crunch 5 5 -f /usr/share/crunch/charset.lst numeric -o dataset13.txt
+- crunch 6 6 -f /usr/share/crunch/charset.lst numeric -o dataset14.txt
+- crunch 7 7 -f /usr/share/crunch/charset.lst numeric -o dataset11.txt
+
+
+PARTE 4 (ALFANÚMERICOS Y SIMBOLOS)
+- crunch 3 3 -f /usr/share/crunch/charset.lst mixalpha-numeric-all -o dataset16.txt
+- crunch 4 4 -f /usr/share/crunch/charset.lst mixalpha-numeric-all -t ,@%^ -o dataset17.txt
+- crunch 5 5 -f /usr/share/crunch/charset.lst mixalpha-numeric-all -t ,@0%^ -o dataset18.txt
+- crunch 6 6 -f /usr/share/crunch/charset.lst mixalpha-numeric-all -t ,@01%^ -o dataset19.txt
+- crunch 7 7 -f /usr/share/crunch/charset.lst mixalpha-numeric-all -t ,@012%^ -o dataset20.txt
+
+PARTE 5 (DICCIONARIOS)
+- shuf -n 100 top_family_names_usa.txt > datasetfinal21.txt
+- shuf -n 100 top_family_names_usa.txt > datasetfinal22.txt
+- shuf -n 100 top_family_names_usa.txt > datasetfinal23.txt
+- shuf -n 100 top_family_names_usa.txt > datasetfinal24.txt
+- shuf -n 100 top_family_names_usa.txt > datasetfinal25.txt
+
+
+PARA COGER 100 LINEAS ALEATORIAS DE CADA DATASET HEMOS APLICADO LA SIGUIENTE LINEA:
+- shuf -n 100 datasetX.txt > datasetfinalX.txt  
+donde la X corresponde al número del dataset 
