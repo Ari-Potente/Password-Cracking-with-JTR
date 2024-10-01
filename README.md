@@ -10,11 +10,11 @@ A través de la generación de diferentes conjuntos de contraseñas y el uso de 
 ### Generación de Contraseñas:
 
   Se han creado 25 datasets de 100 contraseñas cada uno, variando en complejidad y longitud (entre 3 y 7 caracteres). Los conjuntos incluyen:
-    - Letras minúsculas
-    - Letras mayúsculas
-    - Números
-    - Combinaciones alfanuméricas y símbolos
-    - Palabras tomadas de un diccionario
+  - Letras minúsculas
+  - Letras mayúsculas
+  - Números
+  - Combinaciones alfanuméricas y símbolos
+  - Palabras tomadas de un diccionario
 
 ### Evaluación en Kali Linux:
 
