@@ -32,4 +32,4 @@ Se aplicaron 5 estrategias diferentes de rotura de contraseñas, registrando el 
   El informe adjunto detalla el proceso llevado a cabo en Kali Linux, explicando la metodología empleada para la creación de los datasets mediante comandos en la terminal, las configuraciones utilizadas en John the Ripper y los resultados obtenidos para cada estrategia. 
 Además, se explican los scripts y comandos empleados para generar contraseñas y analizar los resultados, junto con las principales conclusiones derivadas de los experimentos.
 
-[memoria.pdf]()
+[memoria.pdf](https://github.com/Ari-Potente/Password-Cracking-with-JTR/blob/main/Practica1_Ciberseguridad_Memoria.pdf)
